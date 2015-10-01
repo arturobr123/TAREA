@@ -1,0 +1,39 @@
+Arturo Bravo Rovirosa    ID 150822
+
+
+Objeto:
+ Un objeto no es más que un conjunto de variables (o datos) y métodos (o funciones) relacionados entre sí. Los objetos en programación se usan para modelar objetos o entidades del mundo real (el objeto hijo, madre, o farmacéutica, por ejemplo). Un objeto es, por tanto, la representación en un programa de un concepto, y contiene toda la información necesaria para abstraerlo: datos que describen sus atributos y operaciones que pueden realizarse sobre los mismos.
+Clase: 
+Una clase es una plantilla que define las variables y los métodos que son comunes para todos los objetos de un cierto tipo. 
+Normalmente en el mundo real existen varios objetos de un mismo tipo, o como diremos enseguida, de una misma clase. Por ejemplo, mi bicicleta es una de las muchas bicicletas que existen en el mundo. Usando la terminología de la programación orientada a objetos, diremos que mi bicicleta es una instancia de la clase de objetos conocida como bicicletas. Todas las bicicletas tienen algunos estados o atributos (color, marcha actual, cadencia actual, dos ruedas) y algunos métodos (cambiar de marcha, frenar) en común. Sin embargo, el estado particular de cada bicicleta es independiente del estado de las demás bicicletas. La particularización de estos atributos puede ser diferente. Es decir, una bicicleta podrá ser azul, y otra roja, pero ambas tienen en común el hecho de tener una variable “color”. De este modo podemos definir una plantilla de variables y métodos para todas las bicicletas. Las plantillas para crear objetos son denominadas clases.
+Instancia:
+Se llama instancia a todo objeto que derive de algún otro. De esta forma, todos los objetos son instancias de algún otro, menos la clase Object que es la madre de todas.
+Herencia:
+Mecanismo para compartir automáticamente métodos y datos entre classes, subclases y objetos.
+Permite crear nuevas clases introduciendo las variaciones con respecto a su clase padre.
+Herencia simple: una subclase puede herecar datos y métodos de una clase simple así como añadir o sustraer ciertos comportamientos.
+Herencia múltiple:posibilidad de adquirir métodos y datos de varias clases simultáneamente.
+Sobrecarga:
+Es posible definir dos o más métodos dentro de la misma clase que comparten el mismo  nombre, siempre y cuando sus declaraciones de parámetro son diferentes. Cuando esto sucede, los métodos se dicen a sobrecargarse, y el proceso se conoce como la sobrecarga de métodos.
+
+
+Ciclos de vida de las variables 
+• Variables de instancia (u objeto): 
+– Se crean cuando se crea el objeto que las contiene.
+ – Se inicializan por defecto si no se hace de modo explícito: 0 para números, "false" para booleano, "null" para objetos. 
+– Se destruyen cuando el recolector de basura de Java no encuentra referencias activas para el objeto. 
+Variables estáticas (o de clase): 
+– Se crean cuando la clase se usa por primera vez. 
+– Se inicializan por defecto si no se hace de modo explícito: • 0 para números, "false" para booleano, "null" para objetos
+ – Suelen existir para el resto del programa (salvo que no esté cargado). • 
+Variables locales (o de bloque): 
+– Creadas en la sentencia en la que están definidas.
+ – No se inicializan por defecto. Contienen datos imprevisibles.
+ – Se destruyen al salir del bloque (en la llave final).
+
+Memoria dinámica:
+Es el espacio en memoria que se crea al declarar variables de cualquier tipo de dato (primitivas [int,char...] o derivados [struct,matrices,punteros...]). La memoria que estas variables ocupan no puede cambiarse durante la ejecución y tampoco puede ser liberada manualmente.
+Otra ventaja de la memoria dinámica es que se puede ir incrementando durante la ejecución del programa. Esto permite, por ejemplo, trabajar con arreglos dinámicos. Aunque en C, a partir del estándar C99 se permite la creación de arreglos cuyo tamaño se determina en tiempo de ejecución, no todos los compiladores implementan este estándar. Además, se sigue teniendo la limitante de que su tamaño no puede cambiar una vez que se especifica, cosa que sí se puede lograr asignando memoria de forma dinámica.
+Una desventaja de la memoria dinámica es que es más difícil de manejar. La memoria estática tiene una duración fija, que se reserva y libera de forma automática. En contraste, la memoria dinámica se reserva de forma explícita y continúa existiendo hasta que sea liberada, generalmente por parte del programador.
+
+
